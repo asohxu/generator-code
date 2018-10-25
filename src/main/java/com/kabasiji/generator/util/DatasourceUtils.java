@@ -401,13 +401,13 @@ public class DatasourceUtils {
      private String sqlType2JavaType(String sqlType) {
 
           if (sqlType.equalsIgnoreCase("bit")) {
-               return "boolean";
+               return "Boolean";
           } else if (sqlType.equalsIgnoreCase("varbinary")) {
                return "String";
           } else if (sqlType.equalsIgnoreCase("tinyint")) {
-               return "byte";
+               return "Short";
           } else if (sqlType.equalsIgnoreCase("smallint")) {
-               return "short";
+               return "Short";
           } else if (sqlType.equalsIgnoreCase("int")) {
                return "Integer";
                //return "int";
@@ -415,11 +415,11 @@ public class DatasourceUtils {
                return "Long";
                //return "long";
           } else if (sqlType.equalsIgnoreCase("float")) {
-               return "float";
+               return "Float";
           } else if (sqlType.equalsIgnoreCase("decimal") || sqlType.equalsIgnoreCase("numeric")
                   || sqlType.equalsIgnoreCase("real") || sqlType.equalsIgnoreCase("money")
                   || sqlType.equalsIgnoreCase("smallmoney")) {
-               return "double";
+               return "Double";
           } else if (sqlType.equalsIgnoreCase("varchar") || sqlType.equalsIgnoreCase("char")
                   || sqlType.equalsIgnoreCase("nvarchar") || sqlType.equalsIgnoreCase("nchar")
                   || sqlType.equalsIgnoreCase("text")) {
